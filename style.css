@@ -47,3 +47,82 @@ table {
 	border-spacing: 0;
 }
 
+:root {
+    font-family: 'Times New Roman', sans-serif;
+    box-sizing: border-box;
+}
+
+
+img {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: #F9FAFB;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 2.5rem;
+}
+
+.right-side > h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#title-main {
+    margin-bottom: 1.5rem;
+}
+
+#title-second {
+    margin-bottom: 2.5rem;
+}
+
+.form-body {
+    color: #2D3644;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-shadow: 4px 4px 5px rgba(196, 193, 193, 0.342);
+}
+
+#form-title {
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.form-row {
+    display: flex;
+    gap: 2rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 550;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: .9rem;
+    width: 16rem;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
+    outline: none;
+}
