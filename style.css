@@ -47,8 +47,17 @@ table {
 	border-spacing: 0;
 }
 
+@font-face {
+    font-family: customFont;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+em {
+    font-style: italic;
+}
+
 :root {
-    font-family: 'Times New Roman', sans-serif;
+    font-family: 'Roboto';
     box-sizing: border-box;
 }
 
@@ -66,7 +75,6 @@ img {
 .right-side {
     display: flex;
     flex-direction: column;
-    padding: 0 0 0 2.5rem;
 }
 
 .right-side > h1 {
@@ -82,6 +90,12 @@ img {
     margin-bottom: 2.5rem;
 }
 
+#title-main,
+#title-second {
+    margin-left: 2.5rem;
+    margin-right: 5em;
+}
+
 .form-body {
     color: #2D3644;
     background-color: white;
@@ -89,6 +103,7 @@ img {
     flex-direction: column;
     gap: 1.5rem;
     box-shadow: 4px 4px 5px rgba(196, 193, 193, 0.342);
+    padding: 1rem 2.5rem;
 }
 
 #form-title {
@@ -125,4 +140,31 @@ input:focus {
     border-color: blue;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
     outline: none;
+}
+
+.create-account {
+    background-color: #596D48;
+    color: rgba(255, 255, 255, 0.903);
+    font-weight: 550;
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: 1px solid #e5e7eb13;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
+}
+
+.create-account:hover {
+    background-color: #323c29;
+}
+
+.have-an-account {
+    margin-left:2.5em;
+    margin-top: 1em;
+}
+
+.log-in {
+    font-weight: bold;
+    text-decoration: none;
+    color: #596D48
 }
